@@ -52,7 +52,7 @@ int main(void)
         // get the first two digits of the card number
         float first_digits = floor(number / pow(10, (digit_counter - 2)));
 
-        // determine the card type and validity based on the first two card digits
+        // determine the card type and validity based on the number length and first two card digits
         switch (digit_counter)
         {
             case 13:
