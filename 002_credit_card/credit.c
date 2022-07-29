@@ -44,15 +44,15 @@ int main(void)
     }
 
     // calculate the checksum
-    int total_number = second_digit + remaining_digit;
+    int checksum = second_digit + remaining_digit;
 
-    // check if the checksum has a remainder of 0 and the card number length
-    if ((total_number % 10 == 0) && (digit_counter == 13 || digit_counter == 15 || digit_counter == 16))
+    // check the card number length and if the checksum has a remainder of 0
+    if ((checksum % 10 == 0) && (digit_counter == 13 || digit_counter == 15 || digit_counter == 16))
     {
         // get the first two digits of the card number
         float first_digits = floor(number / pow(10, (digit_counter - 2)));
 
-        // determine the card type or if invalid based on the first two card digits
+        // determine the card type and validity based on the first two card digits
         switch (digit_counter)
         {
             case 13:
