@@ -124,4 +124,5 @@ int main(int argc, string argv[])
 
     // Print cipher text
     printf("ciphertext: %s\n", cipher_text);
+    return 0;
 }
