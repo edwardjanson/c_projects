@@ -2,7 +2,7 @@
 
 Complete the implementation of tideman.c in such a way that it simulates a Tideman election.
 
-- Complete the vote function.
+- __Complete the vote function.
   - The function takes arguments rank, name, and ranks. If name is a match for the name of a valid candidate, then you should update the ranks array to indicate that the voter has the candidate as their rank preference (where 0 is the first preference, 1 is the second preference, etc.)
 Recall that ranks[i] here represents the user’s ith preference.
   - The function should return true if the rank was successfully recorded, and false otherwise (if, for instance, name is not the name of one of the candidates).
