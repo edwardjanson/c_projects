@@ -24,9 +24,9 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
             BYTE average_color = round((pixel.rgbtBlue + pixel.rgbtGreen + pixel.rgbtRed) / 3.0);
 
             // Update rgb values for a pixel with the average of their values
-            (*ppixel).rgbtBlue = average_color;
-            (*ppixel).rgbtGreen = average_color;
-            (*ppixel).rgbtRed = average_color;
+            ppixel->rgbtBlue = average_color;
+            ppixel->rgbtGreen = average_color;
+            ppixel->rgbtRed = average_color;
         }
     }
     return;
@@ -96,17 +96,17 @@ void average_colour(int height, int width, int pixel_height, int pixel_width, RG
     // Add RGB values to the pixels of the image copy
     if (blue_values != 0)
     {
-        (*ppixel).rgbtBlue = round(blue_values / pixel_count);
+        ppixel->rgbtBlue = round(blue_values / pixel_count);
     }
 
     if (green_values != 0)
     {
-        (*ppixel).rgbtGreen = round(green_values / pixel_count);
+        ppixel->rgbtGreen = round(green_values / pixel_count);
     }
 
     if (red_values != 0)
     {
-        (*ppixel).rgbtRed = round(red_values / pixel_count);
+        ppixel->rgbtRed = round(red_values / pixel_count);
     }
 
     return;
@@ -296,9 +296,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             }
 
             // Add values to pixel the image copy
-            (*ppixel_copy).rgbtBlue = combined_blue;
-            (*ppixel_copy).rgbtGreen = combined_green;
-            (*ppixel_copy).rgbtRed = combined_red;
+            ppixel_copy->rgbtBlue = combined_blue;
+            ppixel_copy->rgbtGreen = combined_green;
+            ppixel_copy->rgbtRed = combined_red;
 
             // Free kernels
             free(gx);
