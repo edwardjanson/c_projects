@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    long number = get_long("Please input you card number here: ");
+    long number = get_long("Please input your card number here: ");
     long number_backup = number;
     int digit_counter = 0;
     int second_digit = 0;
