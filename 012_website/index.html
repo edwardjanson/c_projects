@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rakkas&family=Bebas+Neue&display=swap" rel="stylesheet">
+        <script src="scripts.js"></script>
+        <title>The Quest For The Holy Grail</title>
+    </head>
+    <body>
+        <img src="images/monty-python-banner.jpeg" class="rounded mx-auto d-block" id="header-image" alt="poster of monty python and the holy grail">
+        <h1 class="mx-auto text-center">The Holy Grail</h1>
+        <p class="mx-auto text-center">You have been chosen to retrace the steps of King Arthur in his quest to find the the divine cup.</p>
+        <p class="mx-auto text-center">Answer the questions correctly and you shall uncover its location...</p>
+        <h2 class="text-center">Question One</h2>
+        <p class="mx-auto text-center">To travel faster during his adventure King Arthur...</p>
+        <div class="container">
+          <div class="row question-row mx-auto">
+              <div class="col-sm-4 three-options" onclick="multiAnswer('1_1')">
+                <img src="images/coconuts.jpeg" alt="two coconuts">
+                <div class="container">
+                  <h5 class="answer_title">Used coconuts</h5>
+                </div>
+              </div>
+              <div class="col-sm-4 three-options" onclick="multiAnswer('1_2')">
+                <img src="images/horse.jpeg" alt="medieval painting of horse">
+                <div class="container">
+                  <h5 class="answer_title">Rode a horse</h5>
+                </div>
+              </div>
+              <div class="col-sm-4 three-options" onclick="multiAnswer('1_2')">
+                <img src="images/running.jpeg" alt="knight running">
+                <div class="container">
+                  <h5 class="answer_title">Ran</h5>
+                </div>
+              </div>
+          </div>
+        </div>
+    </body>
+</html>

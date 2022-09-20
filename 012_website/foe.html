@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rakkas&family=Bebas+Neue&display=swap" rel="stylesheet">
+        <script src="scripts.js"></script>
+        <title>A Deadly Foe</title>
+    </head>
+    <body>
+        <img src="images/cave.png" class="rounded mx-auto d-block" id="header-image" alt="cave with knight at the front">
+        <h1 class="mx-auto text-center">Question Three</h1>
+        <p class="mx-auto text-center">On their quest to uncover the location of the Holy Grail King Arthur and his entourage had to make use of the Holy Hand Grenade of Antioch to defeat a deadly...</p>
+        <div class="container">
+          <div class="row question-row mx-auto">
+              <div class="col-sm-4 three-options" onclick="multiAnswer('3_1')">
+                <img src="images/rabbit.webp" alt="white rabbit">
+                <div class="container">
+                  <h5 class="answer_title">Rabbit</h5>
+                </div>
+              </div>
+              <div class="col-sm-4 three-options" onclick="multiAnswer('3_2')">
+                <img src="images/haggis.jpeg" alt="wild haggis">
+                <div class="container">
+                  <h5 class="answer_title">Haggis</h5>
+                </div>
+              </div>
+              <div class="col-sm-4 three-options two-levels" onclick="multiAnswer('3_3')">
+                <img src="images/beast.webp" alt="black beast of aaaaargghh">
+                <div class="container">
+                  <h5 class="answer_title">Black Beast of Aaaaargghh</h5>
+                </div>
+              </div>
+          </div>
+        </div>
+    </body>
+</html>
