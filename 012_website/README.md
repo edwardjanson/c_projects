@@ -12,9 +12,9 @@ Integrate one or more features from Bootstrap into your site. Bootstrap is a pop
 ```
 in your pages’ <head>, below which you can also include
 
-<!---
+```
 <link href="styles.css" rel="stylesheet">
--->
+```
 to link your own CSS.
 
 - Have at least one stylesheet file of your own creation, styles.css, which uses at least five (5) different CSS selectors (e.g. tag (example), class (.example), or ID (#example)), and within which you use a total of at least five (5) different CSS properties, such as font-size, or margin; and
