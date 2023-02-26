@@ -1,4 +1,4 @@
-# cs50_projects
+# CS50 Projects
 
 Completed projects in C and Python for Harvard's CS50: Introduction to Computer Science.
 
